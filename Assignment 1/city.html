@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My City</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+        h1 {
+            color: blue;
+            font-size: 3em;
+            text-align: center;
+        }
+        .landmark {
+            color: purple;
+            font-style: italic;
+        }
+        .scrolling-text {
+            color: orange;
+            font-weight: bold;
+            animation: scroll 20s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <h1>My Beautiful City</h1>
+    <p class="landmark">1. The Grand Park</p>
+    <p class="landmark">2. The Historic Museum</p>
+    <p class="landmark">3. The Riverfront</p>
+    <div class="scrolling-text">
+        Welcome to my city! It is known for its vibrant culture and historical landmarks.
+    </div>
+    <img src="city.jpg" alt="Image of my city" width="100%">
+</body>
+</html>

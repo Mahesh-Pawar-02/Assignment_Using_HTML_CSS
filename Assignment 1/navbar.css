@@ -1,0 +1,27 @@
+nav {
+    background-color: lightgray;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: lightblue;
+}
+
+nav a.active {
+    background-color: gray;
+    color: white;
+}
+
+.signature {
+    margin-top: 20px;
+    text-align: center;
+}

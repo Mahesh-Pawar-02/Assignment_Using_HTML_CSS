@@ -1,0 +1,17 @@
+ul {
+    font-size: 16px;
+    color: green;
+    font-family: Arial, sans-serif;
+}
+
+li {
+    font-size: 14px;
+    color: blue;
+    font-family: Verdana, sans-serif;
+}
+
+ol {
+    font-size: 12px;
+    color: red;
+    font-family: 'Times New Roman', serif;
+}
