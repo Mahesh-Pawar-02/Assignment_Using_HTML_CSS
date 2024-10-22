@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Management Form</title>
+    <style>
+        body {
+            background-color: yellow;
+        }
+        h1 {
+            font-size: 30px;
+            color: red;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        form {
+            background-color: #76e0e1;
+            padding: 20px;
+            width: 300px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-size: 12px;
+        }
+        input[type="text"], input[type="date"], select, textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .priority-options {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .priority-options input {
+            margin-right: 5px;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .button-group input[type="submit"], .button-group input[type="reset"] {
+            padding: 5px 15px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .button-group input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .button-group input[type="reset"] {
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Project Management</h1>
+    <form>
+        <label for="projectName">Project Name</label>
+        <input type="text" id="projectName" name="projectName" placeholder="project name">
+
+        <label for="assignedTo">Assigned to</label>
+        <select id="assignedTo" name="assignedTo">
+            <option value="merry">Er Merry Petison</option>
+            <!-- Add more options if needed -->
+        </select>
+
+        <label for="startDate">Start Date</label>
+        <input type="date" id="startDate" name="startDate">
+
+        <label for="endDate">End Date</label>
+        <input type="date" id="endDate" name="endDate">
+
+        <label for="priority">Priority</label>
+        <div class="priority-options">
+            <label><input type="radio" name="priority" value="high"> High</label>
+            <label><input type="radio" name="priority" value="average"> Average</label>
+            <label><input type="radio" name="priority" value="low"> Low</label>
+        </div>
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="4"></textarea>
+
+        <div class="button-group">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+</body>
+</html>
